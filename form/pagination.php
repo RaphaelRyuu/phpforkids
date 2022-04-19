@@ -19,7 +19,7 @@
             align-items: center
         }
 
-        .pagination a {
+        .page-link {
             position: relative;
             display: block;
             color: #673AB7 !important;
@@ -28,14 +28,14 @@
             border: 1px solid #673AB7 !important
         }
 
-        .pagination a:hover {
+        .page-link:hover {
             z-index: 2;
             color: #fff !important;
             background-color: #673ab7;
             border-color: #024dbc
         }
 
-        .pagination a:focus {
+        .page-link:focus {
             z-index: 3;
             outline: 0;
             box-shadow: none
@@ -45,16 +45,18 @@
 
 <body>
     <div class="wrapper">
-        <div class="pagination">
-            <a class="page-link" href="#">Previous</a>
-            <a class="page-link" href="#">1</a>
-            <a class="page-link" href="#">2</a>
-            <a class="page-link" href="#">3</a>
-            <a class="page-link" href="#">4</a>
-            <a class="page-link" href="#">5</a>
-            <a class="page-link" href="#">6</a>
-            <a class="page-link" href="#">Next</a>
-        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 
