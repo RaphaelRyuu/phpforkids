@@ -55,12 +55,10 @@ input[type="submit"]:hover {
 .content .result img {
   display: inline-block;
   block-size: 150px;
+  padding-right: 20px;
+
 }
 .content .result p {
   text-align: justify;
   font-size: 20px;
-  padding-left: 20px;
-}
-.content .result p span {
-  font-style: italic;
 }
