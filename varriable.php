@@ -1,27 +1,28 @@
 <?php
-$message = "Ngay dau tien di hoc"; //khai bao voi ki tu $ o dau, ten gom[A-z][0-9], none space, phan biet Hoa thuong
+/**
+ * data type in php
+ * number, string, boolean, hoặc NULL, "integer", "double", "string", "array",", "class"
+ */
+
+$message = " Ngay dau tien di hoc 18";
 $level = 16.08;
-define("Neng", "dep trai vo dich"); //dinh nghia hang so
-define("tiennuoc", 25);
-echo $message; //in ra man hinh
-echo "<br \>"; //xuong dong
-echo gettype($message); //in ra kieu du lieu
-echo "<br \>";
+$b = (integer)$level; // ép kiểu
+
+
+// định nghĩa const variable 
+define("Neng", "xau trai vo dich"); 
+define("PI", 3.14);
+
 var_dump($message); //in ra bien va kieu du lieu cua bien
-echo "<br \>";
+gettype($message); // => string
+settype($message, "integer");
+empty($message); //=> true if it's null
 
-echo(int)$level; //ep kieu du lieu cua bien $level tu float -> int
-echo "<br \>";
-settype($level, "int"); //doi kieu du lieu cua bien
-echo $level;
-echo"<br \>";
 
-echo is_numeric($level); //kiem tra xem kieu du lieu cua $level co phai so hay khong 
-echo"<br \>";
-echo is_string($level); //in ra 1 thi dung, khong in ra gi thi sai
-echo"<br \>";
+is_string($message); //=> true || false;
+is_numeric($level); //kiem tra xem kieu du lieu cua $level co phai so hay khong 
 
-echo Neng;
-echo "<br \>";
-echo "Tien nuoc mot khoi: ". tiennuoc;
+unset($message); // => remove variable => giải phóng bộ nhớ
+unset($level);
+
 ?>
